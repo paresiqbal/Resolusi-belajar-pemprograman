@@ -1,0 +1,6 @@
+Belajar bahasa pemprograman Javascript
+Belajar Document Object Model
+Belajar Javascript OOP
+belajar Git
+Belajar CSS Preprocessor
+Belajar React JS

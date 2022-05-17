@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map, Filter, Reduce</title>
+  </head>
+  <body>
+    <script>
+      const angka = [-1, 9, -5, 2, 4, 3, -7, 7, 2, 6];
+      //   const newAngka = [];
+
+      //   for (let i = 0; i < angka.length; i++) {
+      //     if (angka[i] >= 3) {
+      //       newAngka.push(angka[i]);
+      //     }
+      //   }
+
+      //   console.log(newAngka);
+
+      // Filtering
+      //   const newAngka = angka.filter((e) => e >= 3);
+      //   console.log(newAngka);
+
+      //   // Map
+      //   const angkaBaru = angka.map((e) => e * 2);
+      //   console.log(angkaBaru);
+
+      //   // Reduce
+      //   const jmbAnkat = angka.reduce(
+      //     (accumulator, curretValue) => accumulator + curretValue
+      //   );
+      //   console.log(jmbAnkat);
+
+      // method chaining
+      const newAngka = angka
+        .filter((e) => e >= 5)
+        .map((e) => e * 3)
+        .reduce((acc, cur) => acc + cur);
+
+      console.log(newAngka);
+    </script>
+  </body>
+</html>
